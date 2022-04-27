@@ -1,0 +1,12 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+
+  vars:
+    github_users_absent:
+      - johndoe
+      - janedoe
+
+  roles:
+    - role: ansible-role-github_users
