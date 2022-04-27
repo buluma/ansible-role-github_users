@@ -7,5 +7,5 @@ exclude_list:
   - ./.tox
   - ./.cache
 
-skip_list:
+warn_list:
   - internal-error  # Unexpected internal error.
