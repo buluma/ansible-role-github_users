@@ -46,6 +46,8 @@
     manage_dir: true
     exclusive: "{{ github_users_authorized_keys_exclusive }}"
   with_items: "{{ github_users }}"
+  failed_when: false
+  changed_when: false
 
 - name: ensure user accounts in github_users_absent are absent.
   user:
