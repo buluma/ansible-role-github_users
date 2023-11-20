@@ -5,4 +5,4 @@
 repository:
   description: Create users based on GitHub accounts.
   homepage: https://buluma.github.io/
-  topics: system, user, security, ssh, accounts, pubkey, github, ansible, molecule, tox, playbook, hacktoberfest
+  topics: system, user, security, ssh, accounts, pubkey, github, ansible, molecule, tox, playbook
