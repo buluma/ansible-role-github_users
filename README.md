@@ -2,9 +2,9 @@
 
 Create users based on GitHub accounts.
 
-|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-github_users/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-github_users/actions/workflows/molecule.yml)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-github_users/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-github_users)|[![downloads](https://img.shields.io/ansible/role/d/4715)](https://galaxy.ansible.com/buluma/github_users)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-github_users.svg)](https://github.com/buluma/ansible-role-github_users/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-github_users.svg)](https://github.com/buluma/ansible-role-github_users/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-github_users.svg)](https://github.com/buluma/ansible-role-github_users/pulls/)|
+|GitHub|Version|Issues|Pull Requests|
+|------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-github_users/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-github_users/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-github_users.svg)](https://github.com/buluma/ansible-role-github_users/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-github_users.svg)](https://github.com/buluma/ansible-role-github_users/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-github_users.svg)](https://github.com/buluma/ansible-role-github_users/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -97,7 +97,6 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 [Michael buluma](https://buluma.github.io/)
 
-Please consider [sponsoring me](https://github.com/sponsors/buluma).
 
 ### [Special Thanks](#special-thanks)
 
