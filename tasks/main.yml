@@ -1,10 +1,10 @@
 ---
-- name: update apt cache.
+- name: Update apt cache.
   apt: update_cache=true cache_valid_time=600
   register: apt_cache_update
   when: ansible_os_family == 'Debian'
 
-- name: set up github_users for Debian.
+- name: Set up github_users for Debian.
   set_fact:
     github_users:
       - name: buluma
@@ -12,7 +12,7 @@
       - fabpot
   when: ansible_os_family == 'Debian'
 
-- name: set up github_users for RedHat.
+- name: Set up github_users for RedHat.
   set_fact:
     github_users:
       - name: buluma
@@ -20,7 +20,7 @@
       - fabpot
   when: ansible_os_family == 'RedHat'
 
-- name: add users to be removed on first run.
+- name: Add users to be removed on first run.
   user:
     name: "{{ item }}"
     shell: /bin/bash
@@ -29,7 +29,7 @@
   when: apt_cache_update.changed
   tags: ['skip_ansible_lint']
 
-- name: ensure GitHub user accounts are present.
+- name: Ensure GitHub user accounts are present.
   user:
     name: "{{ item.name | default(item) }}"
     shell: /bin/bash
@@ -39,7 +39,7 @@
     state: present
   with_items: "{{ github_users }}"
 
-- name: ensure authorized_keys for GitHub user accounts are present.
+- name: Ensure authorized_keys for GitHub user accounts are present.
   authorized_key:
     user: "{{ item.name | default(item) }}"
     key: "{{ github_url }}/{{ item.name | default(item) }}.keys"
@@ -49,7 +49,7 @@
   failed_when: false
   changed_when: false
 
-- name: ensure user accounts in github_users_absent are absent.
+- name: Ensure user accounts in github_users_absent are absent.
   user:
     name: "{{ item.name | default(item) }}"
     state: absent
